@@ -3,7 +3,7 @@ import UserLayout from "./UserLayout";
 import { Modal, Table, Button } from "antd";
 import axios from "axios";
 
-function BussinessLoans() {
+function BusinessLoan() {
   function getLoan() {
     try {
       const response = axios.get(`${BASE_URL}/getLoanRequest`);
@@ -159,4 +159,4 @@ function BussinessLoans() {
     </div>
   );
 }
-export default BussinessLoans;
+export default BusinessLoan;
