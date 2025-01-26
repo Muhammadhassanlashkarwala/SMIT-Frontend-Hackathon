@@ -29,14 +29,14 @@ const AdminLayout = ({ children }) => {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
 
-// useEffect(() => {
-//     const currentUser = getCurrentUser();
-//     setUser(currentUser);
-//     if (currentUser && getUserToken) {
-//       setIsLoggedIn(true);
-//     }
-//   }, []);
-//   console.log("Checking if user is logged in:", user);
+  // useEffect(() => {
+  //     const currentUser = getCurrentUser();
+  //     setUser(currentUser);
+  //     if (currentUser && getUserToken) {
+  //       setIsLoggedIn(true);
+  //     }
+  //   }, []);
+  //   console.log("Checking if user is logged in:", user);
 
   const handleLogin = () => {
     const currentUser = getUserToken();
