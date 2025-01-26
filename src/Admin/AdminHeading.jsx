@@ -1,7 +1,11 @@
+import React from 'react'
+import AdminLayout from "./AdminComponents/Layout";
 
 
 export const AdminHeading = () => {
   return(
-    <h1>Admin Dashboard</h1>
+    <AdminLayout>
+    <h1>Admin</h1>
+    </AdminLayout>
   )
 };
