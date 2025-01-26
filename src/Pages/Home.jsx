@@ -26,7 +26,7 @@ export const Home = () => {
           business in a more developed direction.
         </p>
         <button
-          className="px-8 text-1.5xl py-4 bg-yellow-500 text-black font-semibold mt-4 text-1.8xl"
+          className="px-8 text-1.5xl py-4 bg-yellow-500 hover:bg-yellow-600 cursor-pointer text-black font-semibold mt-4 text-1.8xl"
           style={{ borderRadius: "6px" }}
         >
           Contact With Us
