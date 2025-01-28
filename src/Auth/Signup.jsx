@@ -8,21 +8,21 @@ function Signup(){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-   const signupSubmit = async () => {
-   const signupResponse = await fetch(
-      `https://smit-backend-hackathon-production.up.railway.app/api/auth/signup`,
-     {
-      method : "POST",
-      headers : { "Content-type" : "application/json" },
-      body : JSON.stringify({
-        name : username,
-        email : email, 
-        password : password
-      })
-     }
-    )
-    signupResponse = await signupResponse.json()
-   }
+  //  const signupSubmit = async () => {
+  //  const signupResponse = await fetch(
+  //     `https://smit-backend-hackathon-production.up.railway.app/api/auth/signup`,
+  //    {
+  //     method : "POST",
+  //     headers : { "Content-type" : "application/json" },
+  //     body : JSON.stringify({
+  //       name : username,
+  //       email : email, 
+  //       password : password
+  //     })
+  //    }
+  //   )
+  //   signupResponse = await signupResponse.json()
+  //  }
     
     return(
         <div className="bg-gray-50 flex items-center justify-center h-screen w-full">
@@ -49,7 +49,7 @@ function Signup(){
 
          {/* buttons ⬇ */}
          <div className="pb-5">
-          <button onClick={signupSubmit} className="signupBtn bg-blue-600 hover:bg-blue-400 mt-5 py-2.5 text-white font-bold text-lg rounded-lg"
+          <button className="signupBtn bg-blue-600 hover:bg-blue-400 mt-5 py-2.5 text-white font-bold text-lg rounded-lg"
           >Signup</button>
           <p className="flex justify-center gap-1 mt-3 font-medium text-gray-500">Already have an account? <Link to={"/login"} className="text-blue-500 hover:underline">Login</Link></p>
          </div>
